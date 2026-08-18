@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ALLASCAR_Tech.com/sitemap.xml

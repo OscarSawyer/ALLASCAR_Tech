@@ -1,0 +1,11 @@
+
+(function(){const answers={
+"What services do you offer?":"We offer conversion-focused website design, landing pages, Google Business Profile optimization, local SEO, WhatsApp integration, lead systems, ads setup, booking systems and website maintenance.",
+"Do you work with US businesses?":"Yes. ALLASCAR_Tech works remotely with US service businesses, especially in Arizona, Texas, Florida and Nevada. US-based coordination support is available when needed.",
+"Do you work with Uganda businesses?":"Yes. Uganda businesses are a primary market. We help with Google visibility, WhatsApp systems, websites, social setup and customer inquiry flows.",
+"How much does a website cost?":"Pricing depends on your goals, pages, features and support needs. We do not display fixed public pricing because every serious business needs a scoped quote.",
+"Can I contact you on WhatsApp?":"Yes. Click the WhatsApp button and send your business name, location and what you need help with.",
+"Do you provide maintenance?":"Yes. We provide maintenance, updates, support and ongoing optimization after launch.",
+"Can you help with Google Business Profile?":"Yes. We help with Google Business Profile setup, optimization, review QR codes and local visibility foundations."
+};
+const wrap=document.createElement('div');wrap.className='chatbot';wrap.innerHTML=`<button class="chat-toggle">Ask ALLASCAR_Tech</button><div class="chat-panel"><div class="chat-head">ALLASCAR_Tech Assistant</div><div class="chat-body"><p>Select a question:</p><div class="chat-options"></div><div class="chat-answer">How can we help your business get more inquiries?</div><a class="btn primary" href="https://wa.me/256771035887?text=Hi%20ALLASCAR_Tech%2C%20I%20need%20help%20with%20my%20business%20online%20presence.">Continue on WhatsApp</a></div></div>`;document.body.appendChild(wrap);const panel=wrap.querySelector('.chat-panel');wrap.querySelector('.chat-toggle').onclick=()=>panel.classList.toggle('open');const opts=wrap.querySelector('.chat-options');const ans=wrap.querySelector('.chat-answer');Object.keys(answers).forEach(q=>{const b=document.createElement('button');b.textContent=q;b.onclick=()=>{ans.textContent=answers[q]};opts.appendChild(b);});})();
