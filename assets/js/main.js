@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded',()=>{
     return icons[name]||'';
   }
 
-  const socials=[
-    {key:'ig', label:'Follow us on IG', url:'#', className:'social-ig'},
-    {key:'fb', label:'Follow us on FB', url:'#', className:'social-fb'},
-    {key:'tt', label:'Follow us on TikTok', url:'#', className:'social-tt'}
-  ];
+ const socials=[
+  {key:'ig', label:'Follow us on IG', url:'https://www.instagram.com/allascar_tech/', className:'social-ig'},
+  {key:'fb', label:'Follow us on FB', url:'https://www.facebook.com/share/1JVAM7Pbcp/', className:'social-fb'},
+  {key:'tt', label:'Follow us on TikTok', url:'https://www.tiktok.com/@allascar_tech', className:'social-tt'}
+];
 
   document.addEventListener('DOMContentLoaded',()=>{
     const revealTargets=document.querySelectorAll('.card,.package,.hero-card,.check-list p,.faq details,.pill-grid span,.contact-form,.author-box,.in-article-cta');
